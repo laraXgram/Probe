@@ -1,0 +1,44 @@
+{
+    "name": "laraxgram/probe",
+    "description": "Powerful REPL for the LaraGram framework.",
+    "keywords": [
+        "probe",
+        "repl",
+        "laragram"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.5",
+        "ext-json": "*",
+        "ext-tokenizer": "*",
+        "laraxgram/core": "^4"
+    },
+    "suggest": {
+        "ext-pcntl": "Runs each Probe command in a forked process so fatal errors do not end the session.",
+        "ext-posix": "Required together with ext-pcntl for process forking.",
+        "ext-readline": "Improves line editing and history."
+    },
+    "autoload": {
+        "psr-4": {
+            "LaraGram\\Probe\\": "src/"
+        },
+        "files": [
+            "src/Shell/functions.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.x-dev"
+        },
+        "laragram": {
+            "providers": [
+                "LaraGram\\Probe\\ProbeServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
