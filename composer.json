@@ -8,10 +8,10 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.5",
+        "php": "^8.3",
         "ext-json": "*",
         "ext-tokenizer": "*",
-        "laraxgram/core": "^4"
+        "laraxgram/core": "^4.5"
     },
     "suggest": {
         "ext-pcntl": "Runs each Probe command in a forked process so fatal errors do not end the session.",
